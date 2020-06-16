@@ -1,0 +1,16 @@
+Package: ShinyCICD
+Title: A Minimal Package for Shiny CI/CD Pipelines
+Version: 0.0.1
+Authors@R: person('Mirai', 'Solutions', email = 'info@mirai-solutions.com', role = c('cre', 'aut'))
+Description: A minimal package for Shiny CI/CD pipelines.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports: 
+    config,
+    golem,
+    shiny
+Suggests:
+    testthat
+RoxygenNote: 7.1.0
+Roxygen: list(markdown = TRUE)
