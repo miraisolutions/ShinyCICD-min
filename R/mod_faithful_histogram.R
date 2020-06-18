@@ -1,4 +1,4 @@
-#' Old faithful histogram shiny module
+#' Old Faithful histogram Shiny module
 #'
 #' @description UI and server function for an example Shiny module.
 #'
@@ -36,24 +36,26 @@ mod_faithful_histogram_ui <- function(id) {
   )
 }
 
-#' @importFrom graphics hist
-#'
 #' @rdname mod_faithful_histogram
+#'
+#' @importFrom graphics hist
 mod_faithful_histogram_server <- function(input, output, session) {
   ns <- session$ns
-  output$distPlot <- renderPlot({
-    # generate bins based on input$bins from ui.R
-    x    <- datasets::faithful[, "waiting"]
-    bins <- seq(min(x), max(x), length.out = input$bins + 1)
 
+  # generate bins based on input$bins from ui.R
+  x    <- datasets::faithful[, "waiting"]
+  bins <- reactive(seq(min(x), max(x), length.out = input$bins + 1))
+
+  output$distPlot <- renderPlot({
     # draw the histogram with the specified number of bins
     hist(
-      x, breaks = bins, freq = !input$density,
+      x, breaks = bins(), freq = !input$density,
+      main = "Histogram of waiting",
       col = "darkgray", border = "white"
     )
   })
 
-  invisible(NULL)
+  reactive(NULL)
 }
 
 
