@@ -36,6 +36,8 @@ mod_faithful_histogram_ui <- function(id) {
   )
 }
 
+#' @importFrom graphics hist
+#'
 #' @rdname mod_faithful_histogram
 mod_faithful_histogram_server <- function(input, output, session) {
   ns <- session$ns
