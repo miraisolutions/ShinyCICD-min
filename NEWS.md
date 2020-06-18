@@ -1,3 +1,3 @@
-# ShinyCICD 0.0.1
+# ShinyCICD (development version)
 
-* Initial example package.
+* Initial example of a packaged Shiny app.

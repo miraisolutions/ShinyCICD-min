@@ -67,6 +67,10 @@ golem::add_module(name = "faithful_histogram")
 # usethis::use_travis()
 # usethis::use_appveyor()
 
+## Release ----
+# usethis::use_version("minor") # "major", "minor", "patch"
+# usethis::use_dev_version()
+
 # You're now set! ----
 # go to dev/03_deploy.R
 rstudioapi::navigateToFile("dev/03_deploy.R")
