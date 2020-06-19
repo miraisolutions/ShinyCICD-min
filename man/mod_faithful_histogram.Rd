@@ -4,7 +4,7 @@
 \alias{mod_faithful_histogram}
 \alias{mod_faithful_histogram_ui}
 \alias{mod_faithful_histogram_server}
-\title{Old faithful histogram shiny module}
+\title{Old Faithful histogram Shiny module}
 \usage{
 mod_faithful_histogram_ui(id)
 
