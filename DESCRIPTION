@@ -1,7 +1,7 @@
 Package: ShinyCICD
 Title: A Minimal Package for Shiny CI/CD Pipelines
 Version: 0.0.0.9000
-Authors@R: person('Martin Hausle', 'Ebbesen', email = 'mhe@ivin-int.com', role = c('cre', 'aut'))
+Authors@R: person('Martin H', 'Ebbesen', email = 'mhe@ivin-int.com', role = c('cre', 'aut'))
 Description: A minimal package for Shiny CI/CD pipelines.
 License: GPL-3
 Encoding: UTF-8
