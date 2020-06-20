@@ -17,10 +17,10 @@ golem::fill_desc(
   pkg_name = "ShinyCICD", # The Name of the package containing the App
   pkg_title = "A Minimal Package for Shiny CI/CD Pipelines", # The Title of the package containing the App
   pkg_description = "A minimal package for Shiny CI/CD pipelines.", # The Description of the package containing the App
-  author_first_name = "Mirai", # Your First Name
-  author_last_name = "Solutions", # Your Last Name
-  author_email = "info@mirai-solutions.com", # Your Email
-  repo_url = NULL # The URL of the GitHub Repo (optional)
+  author_first_name = "Jim", # Your First Name
+  author_last_name = "Tyhurst", # Your Last Name
+  author_email = "jim@tyhurst.com", # Your Email
+  repo_url = https://github.com/jimtyhurst/ShinyCICD-min # The URL of the GitHub Repo (optional)
 )
 
 ## Set {golem} options ----
